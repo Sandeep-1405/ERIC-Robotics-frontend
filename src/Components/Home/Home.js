@@ -7,7 +7,7 @@ function Home(){
 
     useEffect(()=>{
         const fetchData = ()=>{
-            axios.get('http://localhost:3001')
+            axios.get('https://eric-robotics-backend.vercel.app/')
             .then(res=>{
                 setData(res.data)
                 console.log(res)
@@ -19,6 +19,7 @@ function Home(){
 
     return(
         <div>
+            <h1>Home</h1>
             {
                 Data.map((Details)=>(
                     <div>
